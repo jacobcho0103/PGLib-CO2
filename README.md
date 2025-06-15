@@ -1,4 +1,4 @@
-# Carbon Modeling for Power Grid Lib (PGLib)
+# Power Grid Lib - CO2
 
 This repository provides a carbon utilization framework for the [Benchmarks for Validation of Emerging Power System Algorithms](https://power-grid-lib.github.io/) from the IEEE PES Task Force. It implements carbon-aware power system modeling using **pandapower** in Python and **PowerModels.jl** in Julia. The objective is to integrate carbon constraints into power system case files by assigning specific fuel types and their associated emissions to generator buses. This approach enables the evaluation of power system operations with respect to environmental impact considerations.
 
