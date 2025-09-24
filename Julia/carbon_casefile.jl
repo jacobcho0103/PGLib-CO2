@@ -60,7 +60,7 @@ function fuel_dict_generation(file)
     for (_, gen_data) in file["gen"]  # Iterate over generator data
         gen_bus = get(gen_data, "gen_bus", nothing)  # Safely get "gen_bus"
         if gen_bus !== nothing && !haskey(fuel_dict, gen_bus)  # Ensure "gen_bus" exists and is not already added
-            fuel_dict[gen_bus] = Dict("type" => "N/A", "emissions" => "N/A")  # Assign default values
+            fuel_dict[gen_bus] = Dict("type" => "N/A", "emissions" => "CO2")  # Assign default values
         end
     end
     return fuel_dict
