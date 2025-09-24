@@ -47,6 +47,6 @@ def fuel_dict_generation(net):
     fuel_dict = {}
 
     for bus_id in net.gen["bus"].unique():  # Extract unique generator bus IDs
-        fuel_dict[bus_id] = {"type": "N/A", "emissions": "N/A"}  # Default values
+        fuel_dict[bus_id] = {"type": "N/A", "emissions": "CO2"}  # Default values
 
     return fuel_dict
