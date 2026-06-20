@@ -14,7 +14,7 @@ def carbon_casefile(net, fuel_dict):
         "NUC": 0.0,  # Nuclear Power
         "RE": 0.0,  # Renewable Energy
         "HYD": 0.0,  # Hydropower
-        "SYNC": 0.0,  # Hydropower
+        "SYNC": 0.0, 
         "N/A": 0.0  # Default case
     }
 
@@ -29,7 +29,7 @@ def carbon_casefile(net, fuel_dict):
         "NUC": 0.0,  # Nuclear Power
         "RE": 0.0,  # Renewable Energy
         "HYD": 0.0,  # Hydropower
-        "SYNC": 0.0,  # Hydropower
+        "SYNC": 0.0, 
         "N/A": 0.0  # Default case
     }
 
