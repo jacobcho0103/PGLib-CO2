@@ -6,29 +6,31 @@ function carbon_casefile(file, fuel_dict)
     # Lookup tables for CO2 and CO2e emissions
     fuel_lookup = Dict( #CO2 GCI
         "ANT" => 0.9095, #Anthracite Coal
-        "BIT" => 0.8204, #Bituminous Coal
-        "Oil" => 0.7001, #Heavy Oil
-        "GAS" => 0.5173,
+        "COW" => 0.8204, #Bituminous Coal
+        "PEL" => 0.7001, #Heavy Oil
+        "NG" => 0.5173,
         "CCGT" => 0.3621, #Gas Combined Cycle
         "ICE" => 0.6030, #Internal Combustion Engine
         "Thermal" => 0.6874, #Thermal Power (General)
         "NUC" => 0.0, #Nuclear Power
         "RE" => 0.0, #Renewable Energy
         "HYD" => 0.0, #Hydropower
+        "SYNC" => 0.0,
         "N/A" => 0.0  # Ensure "N/A" exists
     )
 
     fuel_lookup_co2e = Dict( #CO2 GCI + (CH4 GCI * 21) + (N2O GCI * 310)
         "ANT" => 0.9143, #Anthracite Coal
-        "BIT" => 0.8230, #Bituminous Coal
-        "Oil" => 0.7018, #Heavy Oil
-        "GAS" => 0.5177,
+        "COW" => 0.8230, #Bituminous Coal
+        "PEL" => 0.7018, #Heavy Oil
+        "NG" => 0.5177,
         "CCGT" => 0.3625, #Gas Combined Cycle
         "ICE" => 0.6049, #Internal Combustion Engine
         "Thermal" => 0.6894, #Thermal Power (General)
         "NUC" => 0.0, #Nuclear Power
         "RE" => 0.0, #Renewable Energy
         "HYD" => 0.0, #Hydropower
+        "SYNC" => 0.0,
         "N/A" => 0.0  # Ensure "N/A" exists
     )
 
